@@ -1,4 +1,4 @@
-package com.rr2222.springsecurityetude.estudante;
+package com.rr2222.springsecurityetude.student;
 
 public class Student {
     private final Integer studentId;

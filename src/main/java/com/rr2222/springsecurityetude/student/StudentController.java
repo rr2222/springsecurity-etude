@@ -1,4 +1,4 @@
-package com.rr2222.springsecurityetude.estudante;
+package com.rr2222.springsecurityetude.student;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
