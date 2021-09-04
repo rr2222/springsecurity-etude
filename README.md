@@ -54,4 +54,20 @@ public class StudentController {
 }
 
 ```
+## Adicionando o Spring Security
+Para adicionar o Spring Security, utilizaremos a seguinte depedência abaixo. Basta adicionar o seguinte bloco de código em nosso POM.XML como na imagem 02.
+
+```
+<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+ </dependency>
+
+```
+![Imagem depedencia spring security](../assets/depedencia-springsecurity.png?raw=true)
+<BR />
+*Imagem 2 - Depedência **spring-boot-starter-security** no arquivo POM.XML*
+
+
+## Basic Auth
 
