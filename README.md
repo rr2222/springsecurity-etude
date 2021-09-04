@@ -70,4 +70,35 @@ Para adicionar o Spring Security, utilizaremos a seguinte depedência abaixo. Ba
 
 
 ## Basic Auth
+O protocolo HTTP é comumente usado para a navegação na WEB sendo relacionado a utilização de URLs para acessar paginas, porém é importante destacar que sua utilição e seus recursos são mais abrangentes, suportando Métodos e Cabeçalhos (Tenembaum).
 
+### Cabeçalhos(HEADER)
+Cabeçalhos permitem a passagem de informações entre o cliente e servidor, podendo ser em uma solicitação ou resposta HTTP, assim podemos fazer a assimilação de que um cabeçalho sejam comparados a passagem de parametros para uma função. Cabeçalhos são formados por seu nome seguido por dois pontos ':' e seu valor. Exemplo:
+
+Content-Type: text/html; charset=utf-8
+Veja mais sobre esse cabeçalho: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type
+
+Não fugindo do foco da explicação a respeito do Basic Auth, o HTTP nos fornece uma framework geral para a o controle de de acesso e autentição. O cabeçalho utilizado para essa tarefa é o Authorization.
+
+Sintaxe:
+Authorization: <tipo> <credenciais>
+
+<Tipo>: Basic
+
+<credenciais>: nome:senha
+
+As credencias(nome:senha) são codificadas em base64 e tornam algo similar a isso:
+
+
+De acordo com a imagem 3, podemos ver o fluxo de autentição com o HTTP. 
+
+
+Refêrencias:
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Authentication
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Authorization
+TANEMBAUM, Andrew S. Redes de Computadores.
+https://datatracker.ietf.org/doc/html/rfc7235#section-4.1
+https://www.vivaolinux.com.br/imagens/artigos/comunidade/Protocolo%20HTTP.pdf
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers
+https://www.w3.org/International/questions/qa-headers-charset.pt-br.html
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type
